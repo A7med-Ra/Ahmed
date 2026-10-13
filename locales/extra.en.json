@@ -1,0 +1,57 @@
+{
+ "start": {
+  "title": "How do we start?",
+  "steps": [
+   {
+    "t": "Intro call",
+    "d": "We talk about your business, your customer, and what bothers you in how you communicate today."
+   },
+   {
+    "t": "Message strategy",
+    "d": "I find your customer's pain and the line that stops them, and show you the direction before any design."
+   },
+   {
+    "t": "Execution & measuring",
+    "d": "We create the content and design, publish, then see what actually moved people."
+   }
+  ]
+ },
+ "review": {
+  "title": "Send me your page and I'll tell you the first 3 things to change",
+  "sub": "A quick, free review of your page or ad, no commitment.",
+  "cta": "Send your page on WhatsApp",
+  "wa": "Hi Ahmed, I'd like a quick review of my page. Here's the link:"
+ },
+ "testimonials": {
+  "title": "What clients say"
+ },
+ "faq": {
+  "title": "Questions every business owner asks",
+  "items": [
+   {
+    "q": "How do we start?",
+    "a": "Message me on WhatsApp or through the form, and we set an intro call where I understand your business before any talk of execution."
+   },
+   {
+    "q": "How much do you charge?",
+    "a": "The price depends on your business and the scope of work. You get a clear offer before we start."
+   },
+   {
+    "q": "Do you work with businesses like mine?",
+    "a": "I've worked with software, healthcare, home services, jewelry and more. What matters is understanding your customer first."
+   },
+   {
+    "q": "What's different from any social media designer?",
+    "a": "Design comes last. First I understand your customer and write the message, then the visuals serve the idea."
+   },
+   {
+    "q": "Will you guarantee sales?",
+    "a": "No one can honestly guarantee sales. What I guarantee is a clear message that touches your customer's pain, and we measure and improve."
+   },
+   {
+    "q": "Can I see real work?",
+    "a": "Of course. The case studies section has the original captions as published, with the analysis."
+   }
+  ]
+ }
+}

@@ -1,0 +1,192 @@
+{
+ "nav": {
+"nav": {
+  "home": "Home",
+  "thinking": "Approach",
+  "cases": "Client Results",
+  "projects": "Portfolio",
+  "process": "Work Process",
+  "contact": "Contact",
+  "cta": "Start Your Project",
+  "lang": "AR"
+}
+ },
+ "hero": {
+  "eyebrow": "Hi, I'm Ahmed Ramadan",
+  "headline": "I build the visuals that catch the eye, and the message that brings sales.",
+  "sub": [
+   "The market is full of visual noise and repetitive messages that push customers away.",
+   "I build your visual identity and pair it with a strong sales hook that touches the buyer's real pain.",
+   "A calm, minimalist design and a clear message, so when customers see your product they stop scrolling and listen."
+  ],
+  "cta1": "Discover My Thinking",
+  "cta2": "See Real Case Studies",
+  "highlight": "brings sales",
+  "chips": [
+   "A strong sales hook",
+   "Calm minimalist design",
+   "A clear message"
+  ],
+  "name": "Ahmed Ramadan",
+  "role": "Founder of NovaReach"
+ },
+ "why": {
+  "title": "Why do customers scroll past your ads?",
+  "points": [
+   "Social media is crowded and loud. Everyone shouts to sell, so customers stop listening to anyone.",
+   "Traditional ads lost their power, because people run from anyone who pressures them to buy.",
+   "The businesses winning now build trust: they understand what the customer really needs and offer the solution simply, without exaggeration."
+  ]
+ },
+ "process": {
+  "title": "How do we build a message that sells without the noise?",
+  "steps": [
+   {
+    "t": "1. Understand your business",
+    "d": "Before I write a word, I need to understand the effort behind your business and the real value you offer."
+   },
+   {
+    "t": "2. Analyze the customer's pain",
+    "d": "Customers buy comfort, not features. I find what makes them hesitate and how to put them at ease."
+   },
+   {
+    "t": "3. Study your competitors",
+    "d": "I study the crowd around you, so your message is the one voice the customer needs to hear."
+   },
+   {
+    "t": "4. Write the hook",
+    "d": "I look for the direct line that stops the scroll and shows right away that we understand their problem."
+   },
+   {
+    "t": "5. Write in the customer's voice, not the salesman's",
+    "d": "I avoid memorized ad language and build a simple message that makes choosing you feel safe."
+   },
+   {
+    "t": "6. Visual cleanup (Minimalism)",
+    "d": "I remove every unnecessary element so the customer's eye stays on your message."
+   }
+  ]
+ },
+ "cases": {
+  "title": "How do we turn effort into results?",
+  "subtitle": "Every design here is built on customer psychology. We look for the words that comfort, not the design that annoys.",
+  "read": "Read Strategy",
+  "empty": "No projects in this category yet.",
+  "filters": {
+   "all": "all",
+   "software": "Software",
+   "marketing": "Marketing",
+   "Clean Services": "Clean services",
+   "jewelry": "Jewelry"
+  },
+  "modal": {
+   "overview": "Project Overview",
+   "postExample": "A post from the campaign",
+   "caption": "The Original Caption, As Published",
+   "captionNote": "Published in Egyptian Arabic, shown here unedited.",
+   "copy": "Copy caption",
+   "copied": "Copied",
+   "why": "Why This Caption Works",
+   "reaction": "Expected Customer Reaction",
+   "lesson": "Marketing Lesson"
+  },
+  "labels": {
+   "pain": "Pain Point",
+   "emotion": "Emotion Sold",
+   "image": "Mental Image",
+   "power": "Empowerment",
+   "trust": "Trust Building",
+   "objection": "Objection Handling",
+   "curiosity": "Curiosity",
+   "human": "Human Connection"
+  },
+  "items": {
+   "p1": {
+    "name": "WebStack",
+    "industry": "Software & AI",
+    "summary": "From selling complex code to selling peace of mind: how we used psychology to sell AI.",
+    "overview": "WebStack builds AI and software solutions. The challenge: business owners fear technology or see it as a luxury. We dropped programming language completely and focused on the worn-out owner's state of mind, selling AI as a sales employee who never sleeps, saving his health and time.",
+    "reaction": "The customer feels you put your finger on the wound, so he reaches out to buy comfort and save his health, not just to buy software.",
+    "lesson": "Stop selling people code and software. Sell them the picture of themselves with their mind at rest."
+   },
+   "p2": {
+    "name": "Teba Link",
+    "industry": "Software & ERP/HR systems",
+    "summary": "How we turned complex systems into comfortable tools that treat the owner's daily pain.",
+    "overview": "Teba Link offers management systems for shops and companies. The market is full of software and customers tire of features and specs. We split the campaign into three angles that speak to the owner's pain: the headache of monthly accounts, losing good staff over salary deductions, and the fear of building an app that seems impossible.",
+    "reaction": "The customer doesn't feel sold to. He feels he found a partner who understands his daily struggle and hands him a lifeline, so he reaches out immediately.",
+    "lesson": "Customers don't care about your code. They care how many hours of sleep and peace of mind it gives them."
+   },
+   "p3": {
+    "name": "Insta Clean, Kafr El-Sheikh",
+    "industry": "Home cleaning services",
+    "summary": "From traditional cleaning ads to messages that build safety and comfort at home.",
+    "overview": "Insta Clean provides professional cleaning for apartments and villas. Most cleaning ads focus on workers' skill and prices. We changed the angle completely to the state of mind the customer needs: comfort, safety, and more time with family.",
+    "reaction": "The customer feels someone finally valued his effort and understood that his day off is his right, so he books feeling relieved, not pressured.",
+    "lesson": "Customers don't pay to watch someone clean. They pay for the result: peace of mind and time with their family."
+   },
+   "p4": {
+    "name": "Khalifa Jewelry",
+    "industry": "Jewelry",
+    "summary": "From selling grams of gold to selling a girl's joy: how we broke the price barrier through emotion.",
+    "overview": "Khalifa Jewelry is a well-known name in Kafr El-Sheikh. Gold ads all look alike: a ring and talk of purity and weight. But a mother buying for her daughter buys a moment of happiness. We combined emotion (pampering her daughter) with a logical answer to the pain of paying (the making charge) to speed up the decision without financial guilt.",
+    "reaction": "The mother smiles involuntarily and feels she can delight her daughter without guilt about the household budget, so she decides to visit.",
+    "lesson": "Gold is not just metal weighed by the gram. It is the feelings and memories wrapped inside."
+   },
+   "p5": {
+    "name": "NovaReach",
+    "industry": "Marketing & content agency",
+    "summary": "From selling social media services to selling market reach: how we capture attention.",
+    "overview": "NovaReach provides marketing and content for companies and clinics. Agencies' ads all look alike (packages, designs, page management). We stepped out of that noise, targeting a niche (like medical) with a psychological hook on their biggest pain: a limited geographic market. We did it with a calm minimalist design that shows the end result instead of listing services.",
+    "reaction": "The client (doctor or business owner) feels this is no ordinary agency but a success partner who will think with him on how to grow, so he reaches out immediately.",
+    "lesson": "Don't sell the client a marketing service or posts. Sell him the size of the market that opens when he works with you."
+   }
+  }
+ },
+ "outcomes": {
+  "title": "What can we build together?",
+  "items": [
+   "Visual systems that sell for you without shouting.",
+   "Marketing messages that speak in your customer's voice and answer his fears.",
+   "A calm identity that highlights your value in a crowded market.",
+   "A smooth buying journey that starts with curiosity and ends with trust.",
+   "Complex services simplified into content that's easy on the eye and mind."
+  ]
+ },
+ "principles": {
+  "title": "Ideas Before Designs",
+  "items": [
+   "Good design disappears, leaving room for your product's value to speak.",
+   "We don't sell features. We sell the more comfortable version of the customer's life.",
+   "Any design detail that doesn't serve the buying decision is just noise."
+  ]
+ },
+ "partners": {
+  "title": "Success Partners",
+  "subtitle": "Brands that trusted us, and the messages we built together that people understand and remember."
+ },
+ "contact": {
+  "title": "Start Your Project",
+  "name": "Full Name",
+  "phone": "Phone Number",
+  "company": "Company Name",
+  "email": "Email",
+  "type": "Project Type",
+  "types": [
+   "Social media management",
+   "Brand positioning",
+   "Content & copywriting",
+   "Other"
+  ],
+  "message": "What should your customer feel?",
+  "submit": "Start Your Project",
+  "waGreeting": "Hi Ahmed, I'd like to start a project with you.",
+  "openWa": "Open WhatsApp",
+  "sent": "If WhatsApp didn't open automatically, use this link. Or message me directly on 01026108708.",
+  "location": "Egypt"
+ },
+ "footer": {
+  "line": "Good marketing isn't louder. It's more human.",
+  "made": "Made by"
+ }
+}

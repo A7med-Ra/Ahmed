@@ -1,0 +1,32 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:4.5rem}
+body{background:#070B14;color:#fff;line-height:1.9}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(60rem 30rem at 80% -10%,rgba(252,107,53,.08),transparent)}
+:focus-visible{outline:2px solid #FC6B35;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+/* Navbar: موبايل وتابلت = همبرجر، لابتوب فما فوق = لينكات */
+.nav-links{display:none}.nav-cta{display:none}.menu-btn{display:inline-flex}.nav-panel{display:block}
+@media(min-width:640px){.nav-cta{display:block}}
+@media(min-width:1024px){.nav-links{display:flex}.menu-btn{display:none}.nav-panel{display:none}}
+/* Hero */
+@property --a{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes spin-a{to{--a:360deg}}
+@keyframes hero-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.hero-bg{background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:28px 28px}
+.hero-rim,.hero-glow{background:conic-gradient(from var(--a),#FC6B35,rgba(252,107,53,.06) 35%,#FC6B35 60%,rgba(252,107,53,.06) 85%,#FC6B35);animation:spin-a 7s linear infinite;border-radius:12.125rem 12.125rem 1.875rem 1.875rem}
+.hero-rim{padding:2px}
+.hero-glow{position:absolute;inset:-6px;filter:blur(30px);opacity:.55}
+.hero-img{border-radius:12rem 12rem 1.75rem 1.75rem;overflow:hidden;background:#111827}
+.hero-float{animation:hero-float 5s ease-in-out infinite}
+/* Partners marquee (CSS فقط) */
+@keyframes marquee{to{transform:translateX(-50%)}}
+.marquee{overflow:hidden;direction:ltr;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marquee-track{display:flex;width:max-content;animation:marquee 40s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.partner-tile{flex:none;width:11rem;height:7.5rem;margin-right:1rem;display:flex;align-items:center;justify-content:center;padding:1rem;border-radius:1rem;border:1px solid rgba(255,255,255,.08);background:#111827;font-weight:600;color:#AAB4C8;transition:border-color .3s,transform .3s}
+.partner-tile:hover{border-color:rgba(252,107,53,.6);transform:translateY(-4px)}
+.partner-tile img{height:5rem;width:auto;max-width:100%;object-fit:contain;border-radius:.6rem}
+/* FAQ (CSS فقط) */
+.faq summary{list-style:none;cursor:pointer}.faq summary::-webkit-details-marker{display:none}
+.faq .chev{transition:transform .3s}.faq details[open] .chev{transform:rotate(180deg)}

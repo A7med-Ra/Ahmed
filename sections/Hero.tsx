@@ -28,7 +28,7 @@ export default function Hero() {
           <div className="hero-glow" aria-hidden />
           <div className="hero-rim relative">
             <div className="hero-img relative">
-              <img src={asset("Ahmed/profile/ahmed ramadan pro.jpg")} alt={t("hero.name")} width={800} height={1000} fetchPriority="high" className="aspect-[4/5] w-full object-cover" />
+              <img src={asset("/profile/ahmed ramadan pro.jpg")} alt={t("hero.name")} width={800} height={1000} fetchPriority="high" className="aspect-[4/5] w-full object-cover" />
               <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-bg via-bg/60 to-transparent" />
               <div className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-md">
                 <p className="font-semibold leading-tight">{t("hero.name")}</p>

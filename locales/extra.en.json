@@ -53,5 +53,13 @@
     "a": "Of course. The case studies section has the original captions as published, with the analysis."
    }
   ]
- }
+ },
+ "menu": {
+  "home": "Home",
+  "process": "My Method",
+  "cases": "Case Studies",
+  "outcomes": "What We Build",
+  "partners": "Partners",
+  "contact": "Contact"
+}
 }

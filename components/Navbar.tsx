@@ -20,6 +20,8 @@ export default function Navbar() {
   const pathname = usePathname();
   const isInternalPage = pathname.includes("/projects/") || pathname === "/start";
   const [open, setOpen] = useState(false);
+  const [drawerMounted, setDrawerMounted] = useState(false);
+  const [drawerEntered, setDrawerEntered] = useState(false);
   const [light, setLight] = useState(false);
   const [activeHref, setActiveHref] = useState("#home");
 
@@ -28,13 +30,25 @@ export default function Navbar() {
     if (!open) return;
     const closeOnEscape = (event: KeyboardEvent) => { if (event.key === "Escape") setOpen(false); };
     document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [open]);
+  useEffect(() => {
+    if (open) {
+      setDrawerMounted(true);
+      const frame = window.requestAnimationFrame(() => setDrawerEntered(true));
+      return () => window.cancelAnimationFrame(frame);
+    }
+    setDrawerEntered(false);
+    if (!drawerMounted) return;
+    const timeout = window.setTimeout(() => setDrawerMounted(false), 300);
+    return () => window.clearTimeout(timeout);
+  }, [open, drawerMounted]);
+  useEffect(() => {
+    if (!drawerMounted) return;
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
-    return () => {
-      document.removeEventListener("keydown", closeOnEscape);
-      document.body.style.overflow = previousOverflow;
-    };
-  }, [open]);
+    return () => { document.body.style.overflow = previousOverflow; };
+  }, [drawerMounted]);
   useEffect(() => {
     const observedSections = new Set<HTMLElement>();
     const observer = new IntersectionObserver(entries => {
@@ -86,6 +100,12 @@ export default function Navbar() {
     const ariaCurrent = !isInternalPage && activeHref === activeHash ? "location" as const : undefined;
     return <Link href={`/${rootHash}`} prefetch aria-current={ariaCurrent} className={className} onClick={mobile ? () => setOpen(false) : undefined}>{t(`nav.${key}`)}</Link>;
   };
+  const drawerLinkMotion = (index: number) => ({
+    className: `transform transition-all duration-200 ease-out ${drawerEntered ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0"}`,
+    style: { transitionDelay: drawerEntered ? `${70 + index * 40}ms` : "0ms" },
+  });
+  const drawerSide = lang === "ar" ? "right-0" : "left-0";
+  const drawerClosedTransform = lang === "ar" ? "translate-x-full" : "-translate-x-full";
 
   return (
     <>
@@ -105,23 +125,19 @@ export default function Navbar() {
       </nav>
 
     </header>
-    {open && createPortal(
+    {drawerMounted && createPortal(
       <div className="fixed inset-0 z-[9999] lg:hidden">
-        <button type="button" aria-label="Close menu" onClick={() => setOpen(false)} className="fixed inset-0 bg-black/70 backdrop-blur-sm" />
-        <aside id="mobile-navigation" aria-label="Main navigation" className="fixed inset-y-0 right-0 z-[10000] flex h-full w-[280px] max-w-[calc(100vw-2rem)] flex-col bg-white p-6 text-slate-900 shadow-2xl dark:bg-[#0B1120] dark:text-white">
-          <div className="mb-8 flex items-center justify-between">
-            <span className="text-lg font-semibold">Ahmed<span className="text-accent">R</span></span>
-            <button type="button" aria-label="Close menu" onClick={() => setOpen(false)} className="rounded-lg p-2 text-muted transition hover:bg-accent/10 hover:text-accent"><X /></button>
+        <button type="button" aria-label={lang === "ar" ? "إغلاق القائمة" : "Close menu"} aria-hidden={!open} tabIndex={open ? 0 : -1} onClick={() => setOpen(false)} className={`fixed inset-0 bg-black/70 backdrop-blur-sm transition-all duration-300 ease-out ${drawerEntered ? "opacity-100" : "pointer-events-none opacity-0"}`} />
+        <aside id="mobile-navigation" aria-label={lang === "ar" ? "القائمة الرئيسية" : "Main navigation"} aria-hidden={!open} inert={!open} className={`fixed inset-y-0 ${drawerSide} z-[10000] flex h-full w-[280px] max-w-[calc(100vw-2rem)] flex-col bg-white p-6 text-slate-900 shadow-2xl transition-all duration-300 ease-out dark:bg-[#0B1120] dark:text-white ${drawerEntered ? "translate-x-0" : drawerClosedTransform}`}>
+          <div className="mb-8 flex justify-end">
+            <button type="button" aria-label={lang === "ar" ? "إغلاق القائمة" : "Close menu"} onClick={() => setOpen(false)} className="rounded-lg p-2 text-muted transition hover:bg-accent/10 hover:text-accent"><X /></button>
           </div>
           <ul className="space-y-1">
-            {NAV.map(item => <li key={item[0]}>{navLink(item, true)}</li>)}
-            <li><Link href="/gallery/" onClick={() => setOpen(false)} className="block rounded-xl px-4 py-3 text-base text-muted transition-colors hover:bg-accent/10 hover:text-accent">{lang === "ar" ? "معرض التصاميم" : "Gallery"}</Link></li>
-            <li><Link href="/start" prefetch onClick={() => setOpen(false)} className="mt-5 block w-full rounded-full bg-accent py-3 text-center font-medium text-onaccent transition hover:brightness-110">{t("nav.cta")}</Link></li>
+            {NAV.map((item, index) => <li key={item[0]} {...drawerLinkMotion(index)}>{navLink(item, true)}</li>)}
+            <li {...drawerLinkMotion(NAV.length)}><Link href="/gallery/" onClick={() => setOpen(false)} className="block rounded-xl px-4 py-3 text-base text-muted transition-colors hover:bg-accent/10 hover:text-accent">{lang === "ar" ? "معرض التصاميم" : "Gallery"}</Link></li>
+            <li {...drawerLinkMotion(NAV.length + 1)}><Link href="/start" prefetch onClick={() => setOpen(false)} className="mt-5 block w-full rounded-full bg-accent py-3 text-center font-medium text-onaccent transition hover:brightness-110">{t("nav.cta")}</Link></li>
           </ul>
-          <div className="mt-auto flex items-center justify-between border-t border-black/10 pt-5 dark:border-white/10">
-            <button onClick={toggleTheme} aria-label={themeLabel} className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-muted hover:bg-accent/10 hover:text-accent">{light ? <Moon size={18} /> : <Sun size={18} />}{themeLabel}</button>
-            <button onClick={toggle} aria-label="Change language" className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-muted hover:bg-accent/10 hover:text-accent"><Languages size={16} />{t("nav.lang")}</button>
-          </div>
+
         </aside>
       </div>,
       document.body,

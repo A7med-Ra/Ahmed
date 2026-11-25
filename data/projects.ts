@@ -54,7 +54,7 @@ export const projects: Project[] = [
     category: "services",
     image: "",
     comingSoon: true,
-    comingSoonTitle: { ar: "أونلاين دنتل ستور", en: "Online Delta Store" },
+    comingSoonTitle: { ar: "أونلاين دنتل استور", en: "Online Delta Store" },
     comingSoonDescription: {
       ar: "تسويق كراسي وتجهيزات العيادات الطبية بزاوية الراحة والاحترافية للطبيب.",
       en: "Marketing medical clinic chairs and equipment around comfort and professionalism for doctors.",

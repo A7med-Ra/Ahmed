@@ -4,7 +4,6 @@ import { LangProvider } from "@/hooks/useLang";
 import SmoothScroll from "@/components/SmoothScroll";
 import ScrollProgress from "@/components/ScrollProgress";
 import NavigationFeedback from "@/components/NavigationFeedback";
-import MobileConsultation from "@/components/MobileConsultation";
 import BackToTop from "@/components/BackToTop";
 import arLocale from "@/locales/ar.json";
 import "lenis/dist/lenis.css";
@@ -51,7 +50,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ScrollProgress />
           <NavigationFeedback />
           {children}
-          <MobileConsultation />
           <BackToTop />
         </LangProvider>
       </body>

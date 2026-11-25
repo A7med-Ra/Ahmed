@@ -1,0 +1,309 @@
+{
+ "nav": {
+  "home": "Home",
+  "about": "About",
+  "projects": "Projects",
+  "process": "Process",
+  "contact": "Contact",
+  "consultation": "Book a consultation",
+  "cta": "Start your project",
+  "lang": "AR"
+ },
+ "request": {
+  "eyebrow": "Complimentary creative direction",
+  "title": "Request 3 free design concepts",
+  "startHeading": "Let’s build your next project",
+  "valueBody": "Tell us a little about your business. We’ll shape your idea into a clear visual direction and message that helps your brand stand out and earn customer trust.",
+  "benefits": [
+   "Three custom design concepts for your business.",
+   "Content and messaging shaped around your customers.",
+   "A direct WhatsApp conversation with no complicated steps."
+  ],
+  "viewWork": "Explore case studies",
+  "fallback": "If WhatsApp didn’t open automatically, continue here:",
+  "subtitle": "Tell us what you need. Your selections will be prepared in a WhatsApp message.",
+  "service": "What would you like help with?",
+  "services": {
+   "social": "Social media content and ads",
+   "website": "Website",
+   "identity": "Complete visual identity"
+  },
+  "brand": "Brand name or link",
+  "brandHint": "Brand name, Instagram, or website",
+  "submit": "Send request via WhatsApp",
+  "close": "Close request form",
+  "whatsapp": {
+   "greeting": "مرحبًا، أرغب في طلب 3 تصاميم مجانية.",
+   "service": "نوع النشاط / الخدمة",
+   "brand": "اسم العلامة التجارية أو رابطها",
+   "later": "سأرسله لاحقًا",
+   "services": {
+    "social": "محتوى وإعلانات سوشيال ميديا",
+    "website": "موقع إلكتروني",
+    "identity": "هوية بصرية كاملة"
+   }
+  }
+ },
+ "hero": {
+  "eyebrow": "Hi, I'm Ahmed Ramadan",
+  "headline": "I build the visuals that catch the eye, and the message that brings sales.",
+  "sub": [
+   "The market is full of visual noise and repetitive messages that push customers away.",
+   "I build your visual identity and pair it with a strong sales hook that touches the buyer's real pain.",
+   "A calm, minimalist design and a clear message, so when customers see your product they stop scrolling and listen."
+  ],
+  "cta1": "Discover My Thinking",
+  "cta2": "See Real Case Studies",
+  "highlight": "brings sales",
+  "chips": [
+   "A strong sales hook",
+   "Calm minimalist design",
+   "A clear message"
+  ],
+  "name": "Ahmed Ramadan",
+  "role": "Founder of NovaReach"
+ },
+ "why": {
+  "title": "Why do customers scroll past your ads?",
+  "points": [
+   "Social media is crowded and loud. Everyone shouts to sell, so customers stop listening to anyone.",
+   "Traditional ads lost their power, because people run from anyone who pressures them to buy.",
+   "The businesses winning now build trust: they understand what the customer really needs and offer the solution simply, without exaggeration."
+  ]
+ },
+ "process": {
+  "title": "How do we build a message that sells without the noise?",
+  "steps": [
+   {
+    "t": "1. Understand your business",
+    "d": "Before I write a word, I need to understand the effort behind your business and the real value you offer."
+   },
+   {
+    "t": "2. Analyze the customer's pain",
+    "d": "Customers buy comfort, not features. I find what makes them hesitate and how to put them at ease."
+   },
+   {
+    "t": "3. Study your competitors",
+    "d": "I study the crowd around you, so your message is the one voice the customer needs to hear."
+   },
+   {
+    "t": "4. Write the hook",
+    "d": "I look for the direct line that stops the scroll and shows right away that we understand their problem."
+   },
+   {
+    "t": "5. Write in the customer's voice, not the salesman's",
+    "d": "I avoid memorized ad language and build a simple message that makes choosing you feel safe."
+   },
+   {
+    "t": "6. Visual cleanup (Minimalism)",
+    "d": "I remove every unnecessary element so the customer's eye stays on your message."
+   }
+  ]
+ },
+ "cases": {
+  "title": "How do we turn effort into results?",
+  "subtitle": "Every design here is built on customer psychology. We look for the words that comfort, not the design that annoys.",
+  "read": "Explore Case Study",
+  "backToProjects": "Back to my work",
+  "previous": "Previous project",
+  "next": "Next project",
+  "detailLayout": {
+   "challenge": "The Challenge",
+   "solution": "The Solution & Strategy",
+   "impact": "Impact",
+   "projectInfo": "Project information",
+   "industry": "Industry",
+   "client": "Project / client",
+   "projectType": "Category",
+   "projectSummary": "Project brief",
+   "studyContents": "In this case study",
+   "triggers": "Copywriting cues",
+   "categories": {
+    "software": "Software",
+    "marketing": "Marketing",
+    "cleanServices": "Cleaning services",
+    "jewelry": "Jewelry"
+   },
+   "ctaTitle": "Like this work? Let’s build your next project."
+  },
+  "empty": "No projects in this category yet.",
+  "filters": {
+   "all": "All",
+   "software": "Web & platforms",
+   "marketing": "Content & marketing",
+   "Clean Services": "Clean services",
+   "jewelry": "Visual identity"
+  },
+  "modal": {
+   "overview": "Project Overview",
+   "postExample": "A post from the campaign",
+   "caption": "The Original Caption, As Published",
+   "captionNote": "Published in Egyptian Arabic, shown here unedited.",
+   "copy": "Copy caption",
+   "copied": "Copied",
+   "why": "Why This Caption Works",
+   "reaction": "Expected Customer Reaction",
+   "lesson": "Marketing Lesson"
+  },
+  "labels": {
+   "pain": "Pain Point",
+   "emotion": "Emotion Sold",
+   "image": "Mental Image",
+   "power": "Empowerment",
+   "trust": "Trust Building",
+   "objection": "Objection Handling",
+   "curiosity": "Curiosity",
+   "human": "Human Connection"
+  },
+  "items": {
+   "p1": {
+    "name": "WebStack",
+    "industry": "Software & AI",
+    "summary": "From selling complex code to selling peace of mind: how we used psychology to sell AI.",
+    "overview": "WebStack builds AI and software solutions. The challenge: business owners fear technology or see it as a luxury. We dropped programming language completely and focused on the worn-out owner's state of mind, selling AI as a sales employee who never sleeps, saving his health and time.",    "postImage": "/projects/1T1.png",
+    "caption": "أكتر حاجة تحرق الدم إنك تكون بتطحن نفسك 14 ساعة شغل في اليوم.. وتلاقي منافسك بيكسب أكتر منك وهو قاعد بيشرب شاي ومروق دماغه! ☕\n\nالسر مش إنه أذكى منك، السر إنه مشغل \"الذكاء الاصطناعي\" عنده موظف مابينامش.\n\nالـ AI دلوقتي مبقاش مجرد تريند، ده بقى السيستم اللي بيرد، وبيحلل، وبيقفل ديلات وأنت مش موجود. لو لسه مصر تعمل كل حاجة بإيدك، أنت فعلياً بتعطل البزنس بتاعك وبتستهلك صحتك على الفاضي.\n\nفي WebStack، بنبرمجلك حلول ذكاء اصطناعي تفهم شغلك وتشيل عنك الحمل الروتيني بالكامل.\n\nسيب التكنولوجيا تشتغل.. وروح أنت اشرب شاي.\n\nhttps://yourwebsite.com",
+    "cards": {
+     "pain": "Pain of hard work: We opened with the line about what is most infuriating to touch the business owner's feeling of working hard without seeing results that match the effort others appear to get.",
+     "emotion": "Ego validation: Saying the secret is not that a competitor is smarter reassures the owner that the problem is the tools, not their ability, making the system easier to accept.",
+     "image": "Visual tie-in: We closed with ‘go have some tea’ to connect the copy to the relaxed robot image and sell peace of mind instead of code.",
+     "power": "Empowerment: Instead of making technology feel complicated, we presented AI as an employee who takes the routine workload off the owner's hands.",
+     "trust": "We used everyday business language about grinding and closing deals, rather than technical programming terms, so the reader feels understood.",
+     "objection": "Creating FOMO: We showed that AI is no longer a luxury; it is already closing deals, so the owner feels they may fall behind if they do not act.",
+     "curiosity": "The surprising opening about what is most infuriating creates an instinctive curiosity that makes business owners stop scrolling to learn who is winning while staying relaxed.",
+     "human": "We left out dry AI terminology and turned the message into a human story about work and relief, like advice from one friend to another."
+    },
+    "reaction": "The customer feels you put your finger on the wound, so he reaches out to buy comfort and save his health, not just to buy software.",
+    "lesson": "Stop selling people code and software. Sell them the picture of themselves with their mind at rest."
+   },
+   "p2": {
+    "name": "Teba Link",
+    "industry": "Software & ERP/HR systems",
+    "summary": "How we turned complex systems into comfortable tools that treat the owner's daily pain.",
+    "overview": "Teba Link offers management systems for shops and companies. The market is full of software and customers tire of features and specs. We split the campaign into three angles that speak to the owner's pain: the headache of monthly accounts, losing good staff over salary deductions, and the fear of building an app that seems impossible.",    "postImage": "/projects/2T2.png",
+    "caption": "في إحساس صعب قوي مش بيفهمه غير أصحاب البزنس.. إنك ترجع بيتك، تقعد مع أهلك، بس عقلك لسه محبوس في المحل أو الشركة: \"يا ترى المخزن فيه عجز؟ الحسابات أقفلت صح؟ الفلوس اللي بره مع الموردين مظبوطة؟\"\n\nالإحساس ده مش مجرد تعب، ده بياكل من طاقتك وسلامك النفسي.\n\nلما تكون مطمن إن كل مليم وكل قطعة في مخزنك متسجلة قدامك بوضوح على موبايلك، هتكتشف إن إدارة البزنس مش معركة، وإن إحساس \"الروقان\" والسيطرة الكاملة ممكن يتحقق في دقايق معدودة كل يوم.\n\nإحنا في \"إيزي مانجر برو\" مش بنقدملك برنامج.. إحنا بنرجعلك وقتك، وذهنك الصافي، وإحساس الأمان اللي بتدور عليه.",
+    "cards": {
+     "pain": "Pain point: We described a real state business owners live with: a mind that will not switch off after work and invoices that still need checking. This shows we understand their struggle.",
+     "emotion": "Selling the feeling, not the product: The central promise was ‘we give you back your time and a clear mind.’ We sell the comfort and security they miss, not software features.",
+     "image": "Mental image: We connected complex tasks such as accounts and inventory to a simple, comforting action. The design shows the customer managing work from a phone with confidence.",
+     "power": "Empowerment: ‘Full control is possible in minutes’ reminds owners of their value and that their place is in growing the business, not drowning in numbers.",
+     "trust": "Speaking their language: Market terms such as ‘is the stock short?’ build immediate trust because the reader feels the writer knows the trade, not just marketing.",
+     "objection": "Removing the burden: Customers fear a complicated new system, so ‘monthly accounts in 5 minutes’ breaks down the fear of technology.",
+     "curiosity": "The visual hook shows sensitive situations, such as a worried manager or an employee leaving, and makes the customer stop scrolling for an answer.",
+     "human": "We focused on the owner's personal life, time with family and peace of mind before money, building a stronger relationship with the brand."
+    },
+    "reaction": "The customer doesn't feel sold to. He feels he found a partner who understands his daily struggle and hands him a lifeline, so he reaches out immediately.",
+    "lesson": "Customers don't care about your code. They care how many hours of sleep and peace of mind it gives them."
+   },
+   "p3": {
+    "name": "Insta Clean, Kafr El-Sheikh",
+    "industry": "Home cleaning services",
+    "summary": "From traditional cleaning ads to messages that build safety and comfort at home.",
+    "overview": "Insta Clean provides professional cleaning for apartments and villas. Most cleaning ads focus on workers' skill and prices. We changed the angle completely to the state of mind the customer needs: comfort, safety, and more time with family.",    "postImage": "/projects/3T3.png",
+    "caption": "في إحساس تقيل أوي كلنا عارفينه.. إنك تخلص أسبوع شغل طويل ومسحول، ترجع تلاقي البيت مكركب ومحتاج مجهود يوم كامل عشان يرجع يبرق من تاني.\n\nالإحساس ده بيسرق طاقتك، وبيخلي يوم الإجازة اللي المفروض تفصل وترتاح فيه، يتحول لـ \"شيفت\" شغل جديد يهد الحيل.\n\nراحة بالك ووقتك مع عيلتك مش رفاهية.. دي أبسط حقوقك بعد شقا الأسبوع.\n\nلما تفتح باب شقتك وتلاقي كل ركن فيها نظيف، مترتب، ومعقم.. هتكتشف إن تفريغ دماغك من هم \"ترويق البيت\" مش مستحيل، وإن إحساس \"الروقان\" والسيطرة ممكن يتحقق من غير ما تضيع دقيقة من إجازتك.\n\nإحنا في \"Insta Clean\" مش بنقدملك مجرد خدمة تنظيف.. إحنا بنرجعلك يوم إجازتك، وبنهديك إحساس الدفا والراحة اللي بتدور عليه وسط زحمة الأيام. لو حاسس إن جه الوقت اللي تريح فيه بالك وتستمتع ببيتك بجد.. سيب الشقا علينا.\n\nابعتلنا رسالة، وخلي بيتك دايماً جاهز لكل لحظة حلوة.",
+    "cards": {
+     "pain": "We addressed constant exhaustion and losing a day off to housework. The customer is not buying a cleaning service; they are buying time and comfort.",
+     "emotion": "We focused on family warmth. ‘Let your children enjoy their home’ sells peace of mind to a mother, not just a clean floor.",
+     "image": "We used warm family scenes rather than conventional photos of workers and empty rooms. The design shows the result the customer hopes for.",
+     "power": "‘Your home is ready for every occasion’ gives the customer a sense of control and removes the worry of last-minute visits and gatherings.",
+     "trust": "Calm language and a clean, minimalist design signal professionalism and build trust before the team enters the home.",
+     "objection": "To address concerns about letting strangers into the home, we used phrases such as ‘professional cleaning’ to establish that the team is trained and trustworthy.",
+     "curiosity": "The caption opens by describing the customer's heavy, draining day, creating curiosity to keep reading for a way out of it.",
+     "human": "We spoke in the customer's voice, recognizing how exhausting another work shift can be. That breaks the advertising barrier and creates a human connection."
+    },
+    "reaction": "The customer feels someone finally valued his effort and understood that his day off is his right, so he books feeling relieved, not pressured.",
+    "lesson": "Customers don't pay to watch someone clean. They pay for the result: peace of mind and time with their family."
+   },
+   "p4": {
+    "name": "Khalifa Jewelry",
+    "industry": "Jewelry",
+    "summary": "From selling grams of gold to selling a girl's joy: how we broke the price barrier through emotion.",
+    "overview": "Khalifa Jewelry is a well-known name in Kafr El-Sheikh. Gold ads all look alike: a ring and talk of purity and weight. But a mother buying for her daughter buys a moment of happiness. We combined emotion (pampering her daughter) with a logical answer to the pain of paying (the making charge) to speed up the decision without financial guilt.",    "postImage": "/projects/4T4.png",
+    "caption": "كل أم نفسها تشوف بنتها زي الأميرة، بس دايماً حسابات 'المصنعية' بتخلينا نتردد.\n\nفي مجوهرات خليفة، قررنا نشيل من عليكي الحسبة دي.\n\nمصنعية أقل.. فرحة أكبر! ✨\nوفرنالك تشكيلة أطفال كاملة بأقل مصنعية، عشان تدلعي بنتك براحتك وتوثقي أحلى لحظات طفولتها بقطعة دهب تعيش معاها.\n\nشرفينا في الفرع واختاري اللي يفرحها:\n📍 كفر الشيخ، المحاربين الجديدة...",
+    "cards": {
+     "pain": "We addressed the pain of paying: the making charge can make customers hesitate or postpone a purchase. We faced the objection directly with ‘lower making charges.’",
+     "emotion": "We appealed to a mother's instinct to make her daughter happy. ‘Treat your daughter’ turns a purchase into an emotional gesture, not just a financial transaction.",
+     "image": "We moved beyond the traditional catalog. Instead of presenting gold as an object, we showed the desired result: a smiling daughter as her mother puts on the bracelet.",
+     "power": "The word ‘at your ease’ gives the mother freedom and control to make her daughter happy without feeling trapped by extra costs.",
+     "trust": "We paired the emotional promise of happiness with a real competitive benefit, lower making charges. That balance helps the offer feel genuine.",
+     "objection": "We challenged the idea that gold is too expensive for children by offering a collection for them: gold retains investment value, while lower making charges encourage buying now.",
+     "curiosity": "The contrast in ‘lower making charges, bigger joy’ catches the eye and highlights the balance the offer promises.",
+     "human": "The design centers on the warmth between mother and daughter. Warm lighting and the daughter's expression make the ad touch the heart before the wallet."
+    },
+    "reaction": "The mother smiles involuntarily and feels she can delight her daughter without guilt about the household budget, so she decides to visit.",
+    "lesson": "Gold is not just metal weighed by the gram. It is the feelings and memories wrapped inside."
+   },
+   "p5": {
+    "name": "NovaReach",
+    "industry": "Marketing & content agency",
+    "summary": "From selling social media services to selling market reach: how we capture attention.",
+    "overview": "NovaReach provides marketing and content for companies and clinics. Agencies' ads all look alike (packages, designs, page management). We stepped out of that noise, targeting a niche (like medical) with a psychological hook on their biggest pain: a limited geographic market. We did it with a calm minimalist design that shows the end result instead of listing services.",    "postImage": "/projects/5T5.png",
+    "caption": "أكتر حاجة بتحبط أي دكتور شاطر، إنه يشوف عيادته معتمدة بس على أهل منطقته.. والسبب غالباً مبيكونش في كفاءته الطبية! 💔\n\nالاعتماد على اليافطة، أو بوستات السوشيال ميديا التقليدية اللي كلها شبه بعض، بيخلي المريض يدور على 'الأقرب' ليه، ويستخسر يبذل مجهود عشان يجيلك.\n\nفي NovaReach، إنت مش بتشتري مجرد خدمة إدارة صفحات وتصميمات.. إنت بتبني 'ثقة' واسم قوي بينك وبين مرضاك. إحنا بنصنعلك محتوى بيلمس وجع المريض ويطمنه، لدرجة تخليه ياخد قرار إنه 'يسافرلك مخصوص' وهو متأكد إنك الحل الأفضل ليه.\n\nركز إنت في علاج مرضاك، وسيبلنا مهمة إننا نكسر حدودك الجغرافية. 🤝\n\nتواصل معانا دلوقتي على: [رقم التليفون]",
+    "cards": {
+     "pain": "We addressed the limits of a local market: many businesses and clinics depend only on customers nearby. The ad speaks directly to that pain.",
+     "emotion": "We appealed to ambition and confidence, presenting the business as a leading destination people travel to, not just another available option.",
+     "image": "Clean visual expression: Instead of listing marketing services, we used a map with glowing points gathering in one place. One image explains the outcome without noise.",
+     "power": "The question ‘How do you get patients to travel to you?’ gives the owner confidence that we know how to help them reach a market beyond their city.",
+     "trust": "We spoke about attracting customers and building trust instead of package prices, positioning the agency as a knowledgeable advisor rather than a seller.",
+     "objection": "We addressed the distance objection directly: customers often think people will not travel to them. The message says that when the content is right, distance loses its importance.",
+     "curiosity": "The question ‘How do you get patients to travel to you?’ is hard for a doctor or clinic owner to pass without stopping to learn the answer.",
+     "human": "We focused on patients looking for trust and safety, not the nearest sign. This turns marketing from ads into building a human relationship."
+    },
+    "reaction": "The client (doctor or business owner) feels this is no ordinary agency but a success partner who will think with him on how to grow, so he reaches out immediately.",
+    "lesson": "Don't sell the client a marketing service or posts. Sell him the size of the market that opens when he works with you."
+   }
+  }
+ },
+ "outcomes": {
+  "title": "What can we build together?",
+  "items": [
+   "Visual systems that sell for you without shouting.",
+   "Marketing messages that speak in your customer's voice and answer his fears.",
+   "A calm identity that highlights your value in a crowded market.",
+   "A smooth buying journey that starts with curiosity and ends with trust.",
+   "Complex services simplified into content that's easy on the eye and mind."
+  ]
+ },
+ "principles": {
+  "title": "Ideas Before Designs",
+  "items": [
+   "Good design disappears, leaving room for your product's value to speak.",
+   "We don't sell features. We sell the more comfortable version of the customer's life.",
+   "Any design detail that doesn't serve the buying decision is just noise."
+  ]
+ },
+ "partners": {
+  "title": "Success Partners",
+  "subtitle": "Brands that trusted us, and the messages we built together that people understand and remember."
+ },
+ "contact": {
+  "title": "Start Your Project",
+  "name": "Full Name",
+  "phone": "Phone Number",
+  "company": "Company Name",
+  "email": "Email",
+  "type": "Project Type",
+  "types": [
+   "Social media management",
+   "Brand positioning",
+   "Content & copywriting",
+   "Other"
+  ],
+  "message": "What should your customer feel?",
+  "submit": "Send via WhatsApp",
+  "waGreeting": "Hi Ahmed, I'd like to start a project with you.",
+  "openWa": "Open WhatsApp",
+  "sent": "If WhatsApp didn't open automatically, use this link. Or message me directly on 01026108708.",
+  "sending": "Opening WhatsApp...",
+  "errors": {
+   "name": "Please enter your name.",
+   "phone": "Please enter a valid phone number.",
+   "email": "Please enter a valid email address.",
+   "message": "Please enter a message."
+  },
+  "location": "Egypt"
+ },
+ "footer": {
+  "line": "Good marketing isn't louder. It's more human.",
+  "made": "Made by"
+ }
+}

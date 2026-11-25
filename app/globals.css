@@ -49,7 +49,6 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-grad
 .scrollbar-track:focus-visible{outline:2px solid rgb(var(--color-accent));outline-offset:3px}
 .scrollbar-track.is-readonly,.scrollbar-track.is-readonly:hover{right:3px;width:3px;opacity:.7;pointer-events:none;transition:none}
 @media(prefers-reduced-motion:reduce){.scrollbar-track{transition:none!important}}
-.mobile-consultation{display:none}
 .back-to-top{position:fixed;inset-inline-end:1.25rem;inset-block-end:7rem;z-index:40;display:flex;height:2.75rem;width:2.75rem;align-items:center;justify-content:center;border:1px solid rgb(var(--color-foreground)/.15);border-radius:9999px;background:rgb(var(--color-card)/.95);color:rgb(var(--color-foreground));box-shadow:0 8px 24px rgb(0 0 0/.2);transition:transform .2s,color .2s,border-color .2s}
 .back-to-top:hover{transform:translateY(-2px);color:rgb(var(--color-accent));border-color:rgb(var(--color-accent)/.5)}
 .project-card{transition:transform .3s ease,box-shadow .3s ease}
@@ -57,5 +56,4 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-grad
 .project-card:focus-within{outline:2px solid rgb(var(--color-accent));outline-offset:3px}
 .project-filter:focus-visible,.project-read:focus-visible,.mobile-consultation:focus-visible,.back-to-top:focus-visible{outline:2px solid rgb(var(--color-accent));outline-offset:3px}
 @media(hover:hover) and (pointer:fine){.project-card:hover{transform:translateY(-5px);box-shadow:0 18px 36px rgb(0 0 0/.2)}.project-card:hover img{transform:scale(1.035)}}
-@media(max-width:639px){.mobile-consultation{position:fixed;inset-inline-start:1.25rem;inset-block-end:1.25rem;z-index:40;display:flex;min-height:3.5rem;align-items:center;justify-content:center;gap:.5rem;border-radius:9999px;background:rgb(var(--color-accent));padding:.65rem 1rem;color:rgb(var(--color-onaccent));font-size:.875rem;font-weight:600;box-shadow:0 8px 24px rgb(0 0 0/.25)}}
 @media(prefers-reduced-motion:reduce){.project-card,.project-card img,.back-to-top{transition:none!important}.project-card:hover,.back-to-top:hover{transform:none}}

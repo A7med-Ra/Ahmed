@@ -129,10 +129,10 @@
   "empty": "No projects in this category yet.",
   "filters": {
    "all": "All",
-   "software": "Web & platforms",
+   "software": "Software & systems",
    "marketing": "Content & marketing",
-   "Clean Services": "Clean services",
-   "jewelry": "Visual identity"
+   "services": "Services",
+   "jewelry": "Jewelry & goldsmithing"
   },
   "modal": {
    "overview": "Project Overview",
@@ -195,7 +195,7 @@
     "lesson": "Customers don't care about your code. They care how many hours of sleep and peace of mind it gives them."
    },
    "p3": {
-    "name": "Insta Clean, Kafr El-Sheikh",
+    "name": "InstaClean",
     "industry": "Home cleaning services",
     "summary": "From traditional cleaning ads to messages that build safety and comfort at home.",
     "overview": "Insta Clean provides professional cleaning for apartments and villas. Most cleaning ads focus on workers' skill and prices. We changed the angle completely to the state of mind the customer needs: comfort, safety, and more time with family.",    "postImage": "/projects/3T3.jpg",

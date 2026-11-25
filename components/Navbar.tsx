@@ -1,6 +1,7 @@
 "use client";
 import { asset } from "@/lib/asset";
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Languages, Menu, Moon, Sun, X } from "lucide-react";
@@ -27,7 +28,12 @@ export default function Navbar() {
     if (!open) return;
     const closeOnEscape = (event: KeyboardEvent) => { if (event.key === "Escape") setOpen(false); };
     document.addEventListener("keydown", closeOnEscape);
-    return () => document.removeEventListener("keydown", closeOnEscape);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", closeOnEscape);
+      document.body.style.overflow = previousOverflow;
+    };
   }, [open]);
   useEffect(() => {
     const observedSections = new Set<HTMLElement>();
@@ -82,6 +88,7 @@ export default function Navbar() {
   };
 
   return (
+    <>
     <header className="sticky top-0 z-40 border-b border-white/5 bg-bg/60 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3">
         <Link href="/" prefetch aria-label={lang === "ar" ? "الرئيسية" : "Home"} className="flex items-center gap-2 text-lg font-semibold"><img src={asset("/logo-mark.png")} alt="" width={32} height={32} className="h-8 w-auto" /><span className="-ms-1.5 text-accent" /></Link>
@@ -96,18 +103,29 @@ export default function Navbar() {
           <button onClick={() => setOpen(!open)} aria-label={open ? (lang === "ar" ? "إغلاق القائمة" : "Close menu") : (lang === "ar" ? "فتح القائمة" : "Open menu")} aria-expanded={open} aria-controls="mobile-navigation" className="menu-btn relative z-[60] rounded-lg p-2 text-muted transition hover:bg-accent/10 hover:text-accent">{open ? <X /> : <Menu />}</button>
         </div>
       </nav>
-      <button type="button" tabIndex={open ? 0 : -1} aria-label={lang === "ar" ? "إغلاق القائمة" : "Close menu"} onClick={() => setOpen(false)} className={`fixed inset-0 z-40 bg-black/50 backdrop-blur-[2px] transition-opacity duration-300 lg:hidden ${open ? "visible opacity-100" : "invisible opacity-0"}`} />
-      <aside id="mobile-navigation" aria-label={lang === "ar" ? "القائمة الرئيسية" : "Main navigation"} aria-hidden={!open} inert={!open} className={`fixed inset-y-0 right-0 z-50 flex w-[min(21rem,88vw)] flex-col border-s border-white/10 bg-bg p-6 pt-24 shadow-2xl transition-transform duration-300 ease-out lg:hidden ${open ? "translate-x-0" : "translate-x-full"}`}>
-        <ul className="space-y-1">
-          {NAV.map(item => <li key={item[0]}>{navLink(item, true)}</li>)}
-          <li><Link href="/gallery/" onClick={() => setOpen(false)} className="block rounded-xl px-4 py-3 text-base text-muted transition-colors hover:bg-accent/10 hover:text-accent">{lang === "ar" ? "معرض التصاميم" : "Gallery"}</Link></li>
-          <li><Link href="/start" prefetch onClick={() => setOpen(false)} className="mt-5 block w-full rounded-full bg-accent py-3 text-center font-medium text-onaccent transition hover:brightness-110">{t("nav.cta")}</Link></li>
-        </ul>
-        <div className="mt-auto flex items-center justify-between border-t border-white/10 pt-5">
-          <button onClick={toggleTheme} aria-label={themeLabel} className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-muted hover:bg-accent/10 hover:text-accent">{light ? <Moon size={18} /> : <Sun size={18} />}{themeLabel}</button>
-          <button onClick={toggle} aria-label={lang === "ar" ? "تغيير اللغة" : "Change language"} className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-muted hover:bg-accent/10 hover:text-accent"><Languages size={16} />{t("nav.lang")}</button>
-        </div>
-      </aside>
+
     </header>
+    {open && createPortal(
+      <div className="fixed inset-0 z-[9999] lg:hidden">
+        <button type="button" aria-label="Close menu" onClick={() => setOpen(false)} className="fixed inset-0 bg-black/70 backdrop-blur-sm" />
+        <aside id="mobile-navigation" aria-label="Main navigation" className="fixed inset-y-0 right-0 z-[10000] flex h-full w-[280px] max-w-[calc(100vw-2rem)] flex-col bg-white p-6 text-slate-900 shadow-2xl dark:bg-[#0B1120] dark:text-white">
+          <div className="mb-8 flex items-center justify-between">
+            <span className="text-lg font-semibold">Ahmed<span className="text-accent">R</span></span>
+            <button type="button" aria-label="Close menu" onClick={() => setOpen(false)} className="rounded-lg p-2 text-muted transition hover:bg-accent/10 hover:text-accent"><X /></button>
+          </div>
+          <ul className="space-y-1">
+            {NAV.map(item => <li key={item[0]}>{navLink(item, true)}</li>)}
+            <li><Link href="/gallery/" onClick={() => setOpen(false)} className="block rounded-xl px-4 py-3 text-base text-muted transition-colors hover:bg-accent/10 hover:text-accent">{lang === "ar" ? "معرض التصاميم" : "Gallery"}</Link></li>
+            <li><Link href="/start" prefetch onClick={() => setOpen(false)} className="mt-5 block w-full rounded-full bg-accent py-3 text-center font-medium text-onaccent transition hover:brightness-110">{t("nav.cta")}</Link></li>
+          </ul>
+          <div className="mt-auto flex items-center justify-between border-t border-black/10 pt-5 dark:border-white/10">
+            <button onClick={toggleTheme} aria-label={themeLabel} className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-muted hover:bg-accent/10 hover:text-accent">{light ? <Moon size={18} /> : <Sun size={18} />}{themeLabel}</button>
+            <button onClick={toggle} aria-label="Change language" className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-muted hover:bg-accent/10 hover:text-accent"><Languages size={16} />{t("nav.lang")}</button>
+          </div>
+        </aside>
+      </div>,
+      document.body,
+    )}
+    </>
   );
 }

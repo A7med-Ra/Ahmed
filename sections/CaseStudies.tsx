@@ -12,10 +12,10 @@ export default function CaseStudies() {
   const { t, lang } = useLang();
   const reduceMotion = useReducedMotion();
   const [f, setF] = useState("all");
-  const filterKeys = ["all", "marketing", "software", "jewelry"] as const;
+  const filterKeys = ["all", "jewelry", "services", "software", "marketing"] as const;
   const list = projects.filter(p => {
     if (f === "all") return true;
-    if (f === "marketing") return p.category === "marketing" || p.category === "clean services";
+    if (f === "services") return p.category === "clean services";
     return p.category === f;
   });
   const k = (id: string, key: string) => t(`cases.items.${id}.${key}`);

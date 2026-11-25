@@ -13,13 +13,13 @@ type LocalizedProject = { name: string; summary: string };
 export const dynamicParams = process.env.NODE_ENV === "development";
 
 export function generateStaticParams() {
-  return projects.map(project => ({ slug: project.id }));
+  return projects.filter(project => !project.comingSoon).map(project => ({ slug: project.id }));
 }
 
 export function generateMetadata({ params }: PageProps): Metadata {
   const project = projects.find(item => item.id === params.slug);
   const content = (arLocale.cases.items as Record<string, LocalizedProject>)[params.slug];
-  if (!project || !content) return {};
+  if (!project || project.comingSoon || !content) return {};
 
   const githubOwner = process.env.GITHUB_REPOSITORY?.split("/")[0];
   const metadataBase = new URL(process.env.NEXT_PUBLIC_SITE_URL || (githubOwner ? `https://${githubOwner}.github.io` : "http://localhost:3000"));

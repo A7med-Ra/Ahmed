@@ -3,6 +3,7 @@ import { asset } from "@/lib/asset";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
+import { Lock } from "lucide-react";
 import { useLang } from "@/hooks/useLang";
 import { projects } from "@/data/projects";
 import Reveal from "@/components/Reveal";
@@ -15,7 +16,7 @@ export default function CaseStudies() {
   const filterKeys = ["all", "jewelry", "services", "software", "marketing"] as const;
   const list = projects.filter(p => {
     if (f === "all") return true;
-    if (f === "services") return p.category === "clean services";
+    if (f === "services") return p.category === "services" || p.category === "clean services";
     return p.category === f;
   });
   const k = (id: string, key: string) => t(`cases.items.${id}.${key}`);
@@ -64,7 +65,30 @@ export default function CaseStudies() {
               transition={{ duration: reduceMotion ? 0 : 0.24 }}
               className={`scroll-mt-[4.5rem] h-full ${list.length === 5 && index === 3 ? "lg:col-start-3" : ""} ${list.length === 5 && index === 4 ? "lg:col-start-7" : ""} lg:col-span-4`}
             >
-              <Link
+              {p.comingSoon ? (
+                <div className="flex h-full flex-col justify-between overflow-hidden rounded-3xl border border-slate-200/70 bg-white text-slate-900 shadow-lg shadow-black/10 dark:border-white/5 dark:bg-[#0B1120] dark:text-white">
+                  <div className="relative w-full p-3 pb-0">
+                    <div className="relative flex aspect-[16/10] w-full items-center justify-center overflow-hidden rounded-2xl border border-slate-200/70 bg-slate-100/90 dark:border-white/5 dark:bg-[#0B1120]">
+                      <div className="flex h-20 w-20 items-center justify-center rounded-full border border-accent/25 bg-accent/10 text-accent shadow-[0_0_35px_rgb(var(--color-accent)/0.25)]">
+                        <Lock size={32} strokeWidth={1.8} aria-hidden="true" />
+                      </div>
+                      <span className="absolute right-4 top-4 rounded-full border border-accent/30 bg-white/90 px-3.5 py-1.5 text-xs font-semibold text-accent dark:bg-[#111827]/95">
+                        {lang === "ar" ? "قريباً" : "Coming Soon"}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex flex-1 flex-col justify-between p-7 pt-4">
+                    <div>
+                      <h3 className="mb-2.5 text-xl font-bold md:text-2xl">{p.comingSoonTitle?.[lang]}</h3>
+                      <p className="mb-6 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{p.comingSoonDescription?.[lang]}</p>
+                    </div>
+                    <button type="button" disabled className="flex w-full cursor-not-allowed items-center justify-between rounded-xl border border-slate-200 bg-slate-100/80 px-5 py-3 text-sm font-semibold text-slate-600 opacity-80 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">
+                      <span>{lang === "ar" ? "قريباً" : "Coming Soon"}</span>
+                      <Lock size={17} aria-hidden="true" />
+                    </button>
+                  </div>
+                </div>
+              ) : <Link
                 href={`/projects/${p.id}/`}
                 prefetch={true}
                 onPointerMove={event => {
@@ -109,7 +133,7 @@ export default function CaseStudies() {
                     </span>
                   </div>
                 </div>
-              </Link>
+              </Link>}
             </motion.article>
           ))}
         </AnimatePresence>

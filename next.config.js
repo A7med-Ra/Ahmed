@@ -1,7 +1,8 @@
-// اسم الريبو بيتاخد تلقائي من GitHub، فلو غيّرته تاني مش هتحتاج تعدّل هنا
-const repo = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "Ahmed";
+// GitHub Pages serves this project from /Ahmed; allow an explicit override for other hosts.
 const basePath =
-  process.env.NODE_ENV === "production" && !repo.endsWith(".github.io") ? "/" + repo : "";
+  process.env.NODE_ENV === "production"
+    ? process.env.NEXT_PUBLIC_BASE_PATH ?? "/Ahmed"
+    : "";
 
 module.exports = {
   reactStrictMode: true,
